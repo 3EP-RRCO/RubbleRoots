@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rubble Roots: 502 Packager Study Cave</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff4d6;--card:#fffaf0;--ink:#2d2250;--mut:#5c5080;--a:#2f9e6e;--b:#e8652b;--c:#3a6fe0;--d:#8a4fc7;--line:#2d2250;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1638;--card:#2a2150;--ink:#fff1cf;--mut:#c9bde8;--line:#fff1cf;--a:#58d39b;--b:#ff8f5a;--c:#7fa4ff;--d:#c79cff}}
+:root[data-theme="dark"]{--bg:#1d1638;--card:#2a2150;--ink:#fff1cf;--mut:#c9bde8;--line:#fff1cf;--a:#58d39b;--b:#ff8f5a;--c:#7fa4ff;--d:#c79cff}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 Nunito,system-ui,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:16px}
+h1,h2,h3{font-family:"Baloo 2",system-ui,sans-serif;line-height:1.15;margin:.2em 0}
+h1{font-size:clamp(2rem,7vw,3.2rem);font-weight:800}
+.hero{background:var(--card);border:3px solid var(--line);border-radius:36px 36px 12px 36px;padding:20px;margin-bottom:14px;box-shadow:6px 6px 0 var(--d)}
+.hero p{margin:.4em 0;color:var(--mut)}
+.crit{font-size:2.2rem;letter-spacing:.2em}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+nav button,.btn{font:800 1rem "Baloo 2",system-ui,sans-serif;border:3px solid var(--line);background:var(--card);color:var(--ink);padding:8px 14px;border-radius:999px;cursor:pointer}
+nav button[aria-selected=true]{background:var(--a);color:#fff}
+:root:not([data-theme="light"]) nav button[aria-selected=true]{color:#12301f}
+button:focus-visible,a:focus-visible{outline:3px solid var(--c);outline-offset:2px}
+section{display:none}section.on{display:block}
+.card{background:var(--card);border:3px solid var(--line);border-radius:22px 22px 22px 6px;padding:14px 16px;margin:12px 0}
+.card.o{border-left:12px solid var(--b)}.card.g{border-left:12px solid var(--a)}.card.b{border-left:12px solid var(--c)}.card.p{border-left:12px solid var(--d)}
+.note{background:var(--card);border:3px dashed var(--b);border-radius:16px;padding:10px 14px;margin:12px 0;font-size:.95rem}
+details{margin:8px 0}summary{cursor:pointer;font:800 1.1rem "Baloo 2",sans-serif}
+.steps button{display:block;width:100%;text-align:left;font:800 1.1rem "Baloo 2",sans-serif;background:var(--card);color:var(--ink);border:3px solid var(--line);border-radius:18px;padding:10px 14px;margin:8px 0;cursor:pointer}
+.steps button .body{display:none;font:400 1rem Nunito,sans-serif;color:var(--mut);margin-top:6px}
+.steps button[aria-expanded=true]{border-color:var(--a);box-shadow:4px 4px 0 var(--a)}
+.steps button[aria-expanded=true] .body{display:block}
+.steps button.done{background:color-mix(in srgb,var(--a) 25%,var(--card))}
+.flip{perspective:800px;height:190px;margin:10px 0;cursor:pointer}
+.flip>div{position:relative;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d}
+.flip.f>div{transform:rotateY(180deg)}
+.flip .s{position:absolute;inset:0;backface-visibility:hidden;border:3px solid var(--line);border-radius:22px;padding:14px;overflow:auto;background:var(--card)}
+.flip .k{transform:rotateY(180deg);background:var(--c);color:#fff}
+:root:not([data-theme="light"]) .flip .k{color:#0f1c3d}
+@media (prefers-reduced-motion:reduce){.flip>div{transition:none}}
+.q{font-weight:700}.opt{display:block;width:100%;text-align:left;margin:6px 0;font:700 1rem Nunito,sans-serif;border:3px solid var(--line);background:var(--card);color:var(--ink);border-radius:14px;padding:8px 12px;cursor:pointer}
+.opt.ok{background:var(--a);color:#fff}.opt.no{background:var(--b);color:#fff}
+.score{font:800 1.5rem "Baloo 2",sans-serif}
+a{color:var(--c);font-weight:700}
+.bar{height:14px;border:3px solid var(--line);border-radius:99px;overflow:hidden;background:var(--card)}.bar i{display:block;height:100%;width:0;background:var(--a);transition:width .3s}
+</style></head><body><div class="wrap">
+<div class="hero"><div class="crit" aria-hidden="true">🪨🌿🧶🏡</div>
+<h1>Rubble Roots Study Cave</h1>
+<p>Welcome, little learner! Down in the cave we learn how a family gets a Section 502 Direct Home Loan, and how a packager helps. Look around, tap things, and tickle your brain.</p>
+<p>The letter of the day is <b>R</b>, for Rural, Repayment, and Rules!</p></div>
+<div class="note"><b>Check before you rely on it:</b> program numbers change. This guide is a study aid built from general knowledge of USDA Rural Development programs. Confirm figures and rules in the current HB-1-3550 handbook and on the RD website.</div>
+<nav role="tablist" id="tabs"></nav>
+
+<section id="process"><h2>🧗 The 502 Direct Process</h2><p>Tap each step to open it. Tap again to close. Done a step? Give it a gold star.</p>
+<div class="bar"><i id="pb"></i></div>
+<div class="steps" id="steps"></div></section>
+
+<section id="programs"><h2>🏘️ Rural Housing Programs</h2><p>Tap a card to flip it. Which program does what?</p><div id="flips"></div></section>
+
+<section id="land"><h2>🌱 Land and Purchase Options</h2>
+<p>A packager asks one big question: what is the family buying, and is it ready within the loan's time limits?</p>
+<div class="card g"><h3>Common ways a 502 family gets a home</h3>
+<details open><summary>1. Buy an existing home</summary>Needs an eligible rural location, a purchase agreement, and an appraisal. The home must be modest and meet RD's condition standards.</details>
+<details><summary>2. Build on land the family already owns</summary>Needs clear title, plans and specs, a builder, and a cost breakdown.</details>
+<details><summary>3. Buy a lot and build</summary>Needs a signed contract or option on the site, plus plans, a builder, and a site that has water, sewer or septic, and road access.</details>
+<details><summary>4. Buy from a builder or developer (new construction)</summary>The sales contract covers the site and the home together.</details>
+<details><summary>5. Mutual self-help</summary>Several families build together with a nonprofit's help and their own labor.</details>
+</div>
+<div class="card o"><h3>The 30-day option question</h3>
+<p>You asked for a list of land purchase options tied to 30 days. Where a family uses an option or contract to hold a site, the term has to give RD time to review and obligate funds. I did not want to hand you a wrong day count from memory.</p>
+<p><b>Your homework:</b> look up the option and sales-contract timing rules in HB-1-3550 (the purchase and construction chapters) and add the exact wording here. Tell me what it says and I will build it into a flashcard.</p></div></section>
+
+<section id="income"><h2>💰 Income Limits and 🗺️ Eligibility Maps</h2>
+<div class="card b"><h3>How income limits work</h3>
+<p>Limits are not one number per state. They vary by <b>county</b> and by <b>household size</b>, and they are updated by RD.</p>
+<details open><summary>Income tiers to know</summary>
+<b>Very low:</b> under 50% of area median. <b>Low:</b> 50% to 80%. <b>Moderate:</b> up to 115%, used for guaranteed loans, not 502 Direct.</details>
+<details><summary>What counts for 502 Direct</summary>Adjusted household income is compared to the low-income limit. You also check repayment ability and whether the family cannot get credit elsewhere on reasonable terms.</details></div>
+<div class="card p"><h3>Where to look it up</h3>
+<p>I cannot show every state's limits here because they run to thousands of county rows and change often. RD keeps the current official numbers on its eligibility site, which also covers the property maps.</p>
+<p>👉 <a href="https://eligibility.sc.egov.usda.gov" target="_blank" rel="noopener">USDA Rural Development eligibility site</a></p>
+<ul><li><b>Income tab:</b> pick state, county, and household size.</li>
+<li><b>Single family property tab:</b> type an address to see if it is in an eligible area.</li>
+<li><b>Multifamily property tab:</b> same idea, with its own area rules.</li></ul></div>
+<div class="note">Want a printable cheat sheet for your home state? Tell me the state and bring the figures, and I will turn them into a study table.</div></section>
+
+<section id="flashq"><h2>🧠 Brain Games</h2><div id="quiz"></div></section>
+</div>
+<script>
+const $=s=>document.querySelector(s);
+const tabs=[["process","Process"],["programs","Programs"],["land","Land"],["income","Income & Maps"],["flashq","Quiz"]];
+tabs.forEach(([id,l],i)=>{const b=document.createElement("button");b.textContent=l;b.setAttribute("role","tab");b.setAttribute("aria-selected",i==0);b.onclick=()=>show(id);b.dataset.id=id;$("#tabs").append(b)});
+function show(id){document.querySelectorAll("section").forEach(s=>s.classList.toggle("on",s.id==id));document.querySelectorAll("#tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.id==id))}
+show("process");
+const steps=[
+["Meet the family and pre-screen","Ask who lives in the home, what they earn, and where they want to live. Check the household against the income limit and check the address on the RD eligibility map."],
+["Gather the paperwork","Application (Form RD 410-4), ID and Social Security numbers, income and employment proof, asset and debt information, credit report, and proof of citizenship or eligible status."],
+["Find the home or site","Get a purchase agreement or builder contract. For new construction add plans, specs, and a cost breakdown. Check that the home is modest and the location is rural-eligible."],
+["Package and submit to RD","Put the file in order, make sure nothing is missing, and send it to the RD office. Complete, clear files move faster."],
+["RD reviews the file","RD checks eligibility, repayment ability, credit, the appraisal, and the environmental review. Expect questions. Answer them quickly."],
+["Approval and funding","If approved, funds are obligated, which can depend on availability. The family may get payment assistance that lowers the effective interest rate."],
+["Closing and move-in","Loan closes, the family signs, and the packager's work is done. Congrats, little cave builder!"]];
+let done=new Set();
+steps.forEach(([t,b],i)=>{const e=document.createElement("button");e.setAttribute("aria-expanded","false");e.innerHTML=`${i+1}. ${t} <span class="star"></span><div class="body">${b}<br><span class="btn" style="display:inline-block;margin-top:8px;font-size:.9rem">Mark done ⭐</span></div>`;
+e.onclick=ev=>{if(ev.target.classList.contains("btn")){done.has(i)?done.delete(i):done.add(i);e.classList.toggle("done",done.has(i));e.querySelector(".star").textContent=done.has(i)?"⭐":"";$("#pb").style.width=done.size/steps.length*100+"%";return}e.setAttribute("aria-expanded",e.getAttribute("aria-expanded")!="true")};$("#steps").append(e)});
+const progs=[
+["Section 502 Direct Home Loans","Loans from USDA straight to low and very low income families for a modest home in a rural area. Payment assistance can bring the effective rate down to 1%. Up to 100% financing with no down payment."],
+["Single-Family Housing Guaranteed Loans","Private lenders make the loan and USDA guarantees it. For moderate income households, up to 115% of area median. Also in eligible rural areas."],
+["Section 504 Home Repair Loans and Grants","Repair or improve a home you own. Very low income owners can get loans. Owners 62 or older who cannot repay a loan may qualify for grants, mainly to remove health and safety hazards."],
+["Mutual Self-Help Housing Technical Assistance Grants","Grants to nonprofits that guide groups of families building homes together. Families put in much of the labor as 'sweat equity,' which counts toward their equity."],
+["Housing Preservation Grants (HPG)","Grants to organizations such as nonprofits and local governments. They use the money to repair homes of low and very low income owners and rental housing."],
+["Housing Preservation and Revitalization (MFH)","A multifamily program. It helps keep existing RD-financed rental housing alive and affordable, including through restructuring and rehabilitation."]];
+progs.forEach(([t,b])=>{const d=document.createElement("div");d.className="flip";d.tabIndex=0;d.setAttribute("role","button");d.innerHTML=`<div><div class="s"><h3>${t}</h3><p>Tap to flip 🔄</p></div><div class="s k"><p>${b}</p></div></div>`;const f=()=>d.classList.toggle("f");d.onclick=f;d.onkeydown=e=>{if(e.key=="Enter"||e.key==" "){e.preventDefault();f()}};$("#flips").append(d)});
+const qs=[
+["Which income group is 502 Direct built for?",["Low and very low","Moderate only","High","Any income"],0],
+["Guaranteed loans are made by whom?",["USDA directly","Private lenders, with a USDA guarantee","Home builders","The county"],1],
+["Where do you check if a property is in an eligible area?",["Zillow","The RD eligibility site","A phone book","City hall only"],1],
+["Which program helps groups of families build together with sweat equity?",["Section 504","HPG","Mutual Self-Help","Guaranteed Loans"],2],
+["Which program targets repairs for a home you already own?",["Section 502 Direct","Section 504","Mutual Self-Help TA","Guaranteed Loans"],1],
+["Income limits depend on:",["State only","County and household size","Age only","Credit score"],1]];
+let qi=0,sc=0;
+function rq(){const q=$("#quiz");if(qi>=qs.length){q.innerHTML=`<div class="card g"><div class="score">You got ${sc} of ${qs.length}! 🎉</div><p>${sc>=5?"Hooray! You are a rock star!":"Good try! Peek at the Programs tab and play again."}</p><button class="btn" id="re">Play again</button></div>`;$("#re").onclick=()=>{qi=0;sc=0;rq()};return}
+const [t,o,a]=qs[qi];q.innerHTML=`<div class="card p"><div class="q">${qi+1}/${qs.length}. ${t}</div>${o.map((x,i)=>`<button class="opt" data-i="${i}">${x}</button>`).join("")}</div>`;
+q.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{const i=+b.dataset.i;q.querySelectorAll(".opt").forEach(x=>x.disabled=true);b.classList.add(i==a?"ok":"no");q.querySelectorAll(".opt")[a].classList.add("ok");if(i==a)sc++;setTimeout(()=>{qi++;rq()},1100)})}
+rq();
+</script></body></html>
